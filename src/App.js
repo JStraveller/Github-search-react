@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-import { BrowserRouter, Switch, Route } from 'react-router-dom'
+import { HashRouter, Switch, Route } from 'react-router-dom'
 import { Navbar } from './components/Navbar'
 import { Home } from './pages/Home'
 import { About } from './pages/About'
@@ -14,7 +14,7 @@ function App() {
   return (
     <GithubState>
       <AlertState>
-        <BrowserRouter>
+        <HashRouter basename='/'>
           <Navbar />
           <Alertt alert={{ text: "Test alert" }} />
           <Switch>
@@ -22,7 +22,7 @@ function App() {
             <Route path="/about" component={About} />
             <Route path="/profile/:name" component={Profile} />
           </Switch>
-        </BrowserRouter>
+        </HashRouter>
       </AlertState>
     </GithubState>
   )
