@@ -4,7 +4,7 @@
 
 
 ## Demo
-https://jstraveller.github.io/github-search-react/
+https://aaleo402.github.io/github-search-react/
 
 ## Available Scripts
 
